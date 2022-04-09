@@ -1,11 +1,5 @@
 # [Amigoscode, Nelson] Microservices and Distributed Systems [ENG, 2022] Kafka Part
 
-<br/>
-
-
-<div align="center">
-    <iframe width="853" height="480" src="https://www.youtube.com/embed/SqVfCyfCJqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 <br/>
 
@@ -21,6 +15,21 @@
 
 ![Application](/img/pic02.png?raw=true)
 
+
+
+<br/>
+
+```
+// POST
+$ curl \
+    --data '{
+      "message":"Hooray Amigoscode"
+      }' \
+    --header "Content-Type: application/json" \
+    --request POST \
+    --url http://localhost:8080/api/v1/messages \
+    | jq
+```
 
 <br/><br/>
 
