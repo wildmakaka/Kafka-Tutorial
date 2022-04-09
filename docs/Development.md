@@ -16,6 +16,17 @@
 ![Application](/img/pic02.png?raw=true)
 
 
+<br/>
+
+```
+// Receive a Message
+$ kafka-console-consumer.sh \
+    --bootstrap-server localhost:9092 \
+    --topic amigoscode \
+    --from-beginning
+
+^C
+```
 
 <br/>
 
@@ -29,6 +40,24 @@ $ curl \
     --request POST \
     --url http://localhost:8080/api/v1/messages \
     | jq
+```
+
+<br/>
+
+**But something not working! Looks with Data Format on Reading from Kafka**
+
+
+<br/>
+
+```
+$ kafka-console-consumer.sh \
+>     --bootstrap-server localhost:9092 \
+>     --topic amigoscode \
+>     --from-beginning
+{"message":"Hooray Amigoscode","created":[2022,4,9,21,20,9,460259917]}
+{"message":"Hooray Amigoscode","created":[2022,4,9,21,22,22,43521562]}
+{"message":"Hooray Amigoscode","created":[2022,4,9,21,22,33,600139003]}
+{"message":"Hooray Amigoscode","created":[2022,4,9,21,22,41,357558500]}
 ```
 
 <br/><br/>
