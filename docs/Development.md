@@ -44,8 +44,9 @@ $ curl \
 
 <br/>
 
-**But something not working! Looks with Data Format on Reading from Kafka**
+**UPD! Should be fixed!**
 
+**Looks with Data Format on Reading from Kafka**
 
 <br/>
 
